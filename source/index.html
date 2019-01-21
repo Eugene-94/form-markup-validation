@@ -7,6 +7,90 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <main class="index-content">
+      <h1 class="index-content__title">This is the sign up page</h1>
+      <section class="sign-up">
+        <h2 class="visually-hidden">Registration form button</h2>
 
+        <a class="sign-up__btn" href="#">Open form</a>
+      </section>
+
+      <section class="modal">
+        <button class="modal__close">
+          <span class="visually-hidden">Close window</span>
+        </button>
+        <h2 class="modal__title">Register for an Open Day</h2>
+        <p class="modal__promo">come and say hello</p>
+
+        <section class="form-section">
+          <h3 class="form-section__title">Book your place</h3>
+          <p class="form-section__intro">
+            Open Days are the perfect opportunity to get to know us,
+            visit our campus, see acccommodation, meet academics, and get the low-down on the Essex student life.
+          </p>
+
+          <form class="form" action="#" method="post">
+            <fieldset class="form__fieldset">
+              <legend class="form__input-title">I am an</legend>
+              <select name="education" id="education">
+                <option value="" disabled selected hidden>Select education</option>
+                <option value="value1">Lorem Ipsum</option>
+                <option value="value2">Lorem Ipsum</option>
+                <option value="value3">Lorem Ipsum</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <legend class="form__input-title">Campus</legend>
+              <select name="campus" id="campus">
+                <option value="" disabled selected hidden>Select campus</option>
+                <option value="value1">Colchester Campus</option>
+                <option value="value2">Lorem Ipsum</option>
+                <option value="value3">Lorem Ipsum</option>
+              </select>
+            </fieldset>
+
+
+            <fieldset class="form__fieldset">
+              <legend class="form__input-title">Date*</legend>
+              <select name="campus" id="campus">
+                <option value="" disabled selected hidden>Select date</option>
+                <option value="12">Sat 12th June</option>
+                <option value="13">Sun 13th June</option>
+                <option value="14">Mon 14th June</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="form__fieldset">
+              <legend class="form__input-title">Your name</legend>
+
+              <label class="form__input-title" for="first-name">First name*</label>
+              <input id="first-name" type="text" name="first-name" required>
+
+              <label class="form__input-title" for="last-name">Last name*</label>
+              <input id="last-name" type="text" name="last-name" required>
+            </fieldset>
+
+            <fieldset>
+              <label class="form__input-title" for="email">Email address*</label>
+              <input id="email" type="email" name="email" required>
+            </fieldset>
+
+            <label for="subscribe">I would like to receive email updates from the University</label>
+            <input id="subscribe" type="checkbox" name="subscribe" value="updatesletters">
+
+            <button type="submit" name="submit">make a booking</button>
+          </form>
+
+          <p class="form-section__data-protection">
+            The information provided by you will be held by the University of Essex in accordance with the University's
+            Data protection Policy and may be used for the University's marketing purposes. On occasion we may contact you to
+            advertise events with information relevant to student recruitment. If you do not wish to receive this information,
+            please select the opt out function which can be found at the foot of your confirmation email. You will receive this
+            email within 24 hours of registering.
+          </p>
+        </section>
+      </section>
+    </main>
   </body>
 </html>
