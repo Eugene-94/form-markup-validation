@@ -1,0 +1,20 @@
+.sign-up {
+  height: auto;
+}
+
+.sign-up__btn {
+  box-sizing: border-box;
+
+  display: block;
+  width: 175px;
+  height: 50px;
+  margin: 0 auto;
+  border: 3px solid #adadad;
+
+  font-family: inherit;
+  font-weight: 900;
+  color: #000000;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 50px;
+}

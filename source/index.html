@@ -19,7 +19,7 @@
         <button class="modal__close">
           <span class="visually-hidden">Close window</span>
         </button>
-        <h2 class="modal__title">Register for an Open Day</h2>
+        <h2 class="modal__title">Register for an Open&nbspDay</h2>
         <p class="modal__promo">come and say hello</p>
 
         <section class="form-section">
@@ -31,8 +31,8 @@
 
           <form class="form" action="#" method="post">
             <fieldset class="form__fieldset">
-              <legend class="form__input-title">I am an</legend>
-              <select name="education" id="education">
+              <legend class="form__select-title">I am an</legend>
+              <select class="form__select form__select--education" id="education" name="education">
                 <option value="" disabled selected hidden>Select education</option>
                 <option value="value1">Lorem Ipsum</option>
                 <option value="value2">Lorem Ipsum</option>
@@ -41,8 +41,8 @@
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <legend class="form__input-title">Campus</legend>
-              <select name="campus" id="campus">
+              <legend class="form__select-title">Campus</legend>
+              <select class="form__select form__select--campus" id="campus" name="campus">
                 <option value="" disabled selected hidden>Select campus</option>
                 <option value="value1">Colchester Campus</option>
                 <option value="value2">Lorem Ipsum</option>
@@ -52,8 +52,8 @@
 
 
             <fieldset class="form__fieldset">
-              <legend class="form__input-title">Date*</legend>
-              <select name="campus" id="campus">
+              <legend class="form__select-title">Date*</legend>
+              <select class="form__select form__select--date" id="campus" name="campus">
                 <option value="" disabled selected hidden>Select date</option>
                 <option value="12">Sat 12th June</option>
                 <option value="13">Sun 13th June</option>
@@ -61,25 +61,33 @@
               </select>
             </fieldset>
 
-            <fieldset class="form__fieldset">
-              <legend class="form__input-title">Your name</legend>
+            <fieldset class="form__fieldset form__fieldset--name">
+              <legend class="form__input-title visually-hidden">Your name</legend>
 
-              <label class="form__input-title" for="first-name">First name*</label>
-              <input id="first-name" type="text" name="first-name" required>
+              <div class="fieldset-wrapper">
+                <div class="input-wrapper input-wrapper--name">
+                  <input class="form__input" id="first-name" type="text" name="first-name" required>
+                  <label class="form__input-title form__input-title--nonfilled" for="first-name">First name*</label>
+                </div>
 
-              <label class="form__input-title" for="last-name">Last name*</label>
-              <input id="last-name" type="text" name="last-name" required>
+                <div class="input-wrapper input-wrapper--surname">
+                  <input class="form__input" id="last-name" type="text" name="last-name" required>
+                  <label class="form__input-title form__input-title--nonfilled" for="last-name">Last name*</label>
+                </div>
+              </div>
             </fieldset>
 
-            <fieldset>
-              <label class="form__input-title" for="email">Email address*</label>
-              <input id="email" type="email" name="email" required>
+            <fieldset class="form__fieldset form__fieldset--email">
+              <label class="form__input-title form__input-title--nonfilled" for="email">Email address*</label>
+              <input class="form__input form__input--email" id="email" type="email" name="email" required>
             </fieldset>
 
-            <label for="subscribe">I would like to receive email updates from the University</label>
-            <input id="subscribe" type="checkbox" name="subscribe" value="updatesletters">
+            <div class="subscribe-wrapper">
+              <input id="subscribe" type="checkbox" name="subscribe" value="updatesletters">
+              <label for="subscribe">I would like to receive email updates from the University</label>
+            </div>
 
-            <button type="submit" name="submit">make a booking</button>
+            <button class="form__submit" type="submit" name="submit">make a booking</button>
           </form>
 
           <p class="form-section__data-protection">
