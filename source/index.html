@@ -29,7 +29,7 @@
             visit our campus, see acccommodation, meet academics, and get the low-down on the Essex student life.
           </p>
 
-          <form class="form" action="#" method="post">
+          <form class="form" action="#" method="post" novalidate>
             <fieldset class="form__fieldset">
               <legend class="form__select-title">I am an</legend>
               <select class="form__select form__select--education" id="education" name="education">
@@ -53,33 +53,37 @@
 
             <fieldset class="form__fieldset">
               <legend class="form__select-title">Date*</legend>
-              <select class="form__select form__select--date" id="campus" name="campus">
+              <select class="form__select form__select--date" id="date" name="date" required>
                 <option value="" disabled selected hidden>Select date</option>
                 <option value="12">Sat 12th June</option>
                 <option value="13">Sun 13th June</option>
                 <option value="14">Mon 14th June</option>
               </select>
+              <span class="error" aria-live="polite"></span>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--name">
-              <legend class="form__input-title visually-hidden">Your name</legend>
+              <legend class="visually-hidden">Your name</legend>
 
               <div class="fieldset-wrapper">
                 <div class="input-wrapper input-wrapper--name">
-                  <input class="form__input" id="first-name" type="text" name="first-name" required>
+                  <input class="form__input" id="name" type="text" name="first-name" required>
+                  <span class="error" aria-live="polite"></span>
                   <label class="form__input-title form__input-title--nonfilled" for="first-name">First name*</label>
                 </div>
 
                 <div class="input-wrapper input-wrapper--surname">
-                  <input class="form__input" id="last-name" type="text" name="last-name" required>
+                  <input class="form__input" id="surname" type="text" name="last-name" data-type="surname" required>
+                  <span class="error" aria-live="polite"></span>
                   <label class="form__input-title form__input-title--nonfilled" for="last-name">Last name*</label>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--email">
+              <input class="form__input form__input--email" id="email" type="email" name="email" data-type="email" required>
+              <span class="error"></span>
               <label class="form__input-title form__input-title--nonfilled" for="email">Email address*</label>
-              <input class="form__input form__input--email" id="email" type="email" name="email" required>
             </fieldset>
 
             <div class="subscribe-wrapper">
@@ -100,5 +104,6 @@
         </section>
       </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>

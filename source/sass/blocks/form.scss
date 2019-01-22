@@ -119,3 +119,42 @@
 
   background-color: #ffffff;
 }
+
+.error {
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+
+  font-size: 12px;
+  color: #db4433;
+}
+
+.correct::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: -23px;
+
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url('../img/valid-icon.png');
+}
+
+.incorrect::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  right: -23px;
+
+  transform: translateY(-50%);
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url('../img/invalid-icon.png');
+}
