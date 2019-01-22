@@ -1,8 +1,8 @@
 {
-  "name": "mishka",
+  "name": "form",
   "version": "15.0.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Тестовое задание",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
@@ -47,5 +47,7 @@
   "engines": {
     "node": "8.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "es5-shim": "^4.5.12"
+  }
 }

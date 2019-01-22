@@ -15,6 +15,19 @@
   &--date {
     width: 253px;
   }
+
+  &--select::after {
+    content: "";
+
+    position: absolute;
+    right: 25px;
+    @include y-center;
+
+    width: 10px;
+    height: 11px;
+
+    background-image: url("../img/arrow-down.png");
+  }
 }
 
 .form__select {
@@ -24,7 +37,7 @@
   padding-top: 30px;
   padding-bottom: 10px;
   padding-left: 12px;
-  border: 3px solid #eaeaea;
+  border: 3px solid $border-inputs-color;
 
   font-family: inherit;
   font-size: 16px;
@@ -33,12 +46,16 @@
   appearance: none;
 }
 
+.form__select::-ms-expand {
+    display: none;
+}
+
 .form__select-title {
   position: absolute;
   top: 13px;
   left: 17px;
 
-  color: #adadad;
+  color: $label-color;
   font-size: 12px;
   font-weight: 800;
   line-height: 22px;
@@ -64,15 +81,20 @@
 .form__input {
   box-sizing: border-box;
 
+  position: relative;
+  z-index: 110;
+
   width: 100%;
   padding-top: 30px;
   padding-bottom: 10px;
   padding-left: 12px;
-  border: 3px solid #eaeaea;
+  border: 3px solid $border-inputs-color;
 
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  background-color: transparent;
 }
 
 .form__input-title {
@@ -83,7 +105,7 @@
     font-size: 16px;
     font-weight: 800;
     line-height: 22px;
-    color: #adadad;
+    color: $label-color;
   }
 
   &--filled {
@@ -93,7 +115,7 @@
     font-size: 12px;
     font-weight: 800;
     line-height: 22px;
-    color: #adadad;
+    color: $label-color;
   }
 }
 
@@ -120,6 +142,8 @@
   position: relative;
 
   padding-left: 25px;
+
+  font-weight: 600;
 }
 
 .form__subscribe-input + label::before {
@@ -145,7 +169,7 @@
 .form__submit {
   width: 175px;
   height: 50px;
-  border: 3px solid #adadad;
+  border: 3px solid $form-btn-color;
   margin-top: 26px;
 
   font-size: 14px;
@@ -154,6 +178,10 @@
   text-transform: capitalize;
 
   background-color: #ffffff;
+
+  &:hover {
+    border-color: darken($form-btn-color, 15%);
+  }
 }
 
 .error {

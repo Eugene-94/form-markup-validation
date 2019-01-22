@@ -3,11 +3,10 @@
 
   position: absolute;
   top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+  @include x-center;
   z-index: 100;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 728px;
   padding: 40px;
@@ -70,6 +69,8 @@
     width: 87.5%;
     padding: 0;
     padding-top: 33px;
+
+    background-image: url('../img/modal-bg-min.jpg');
   }
 
   .modal__close {

@@ -10,6 +10,15 @@
 @font-face {
   font-family: "OpenSans";
   font-style: normal;
+  font-weight: 600;
+  src: local("OpenSans"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
   font-weight: 800;
   src: local("OpenSans"),
     url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"),
