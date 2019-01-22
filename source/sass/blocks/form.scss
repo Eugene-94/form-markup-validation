@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-right: 30px;
+  margin-top: 10px;
 }
 
 .form__fieldset {
@@ -10,16 +11,20 @@
   border: none;
   padding: 0;
   margin-bottom: 20px;
+
+  &--date {
+    width: 253px;
+  }
 }
 
 .form__select {
   box-sizing: border-box;
 
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  border: 2px solid #eaeaea;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  border: 3px solid #eaeaea;
 
   font-family: inherit;
   font-size: 16px;
@@ -30,7 +35,7 @@
 
 .form__select-title {
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 17px;
 
   color: #adadad;
@@ -60,10 +65,10 @@
   box-sizing: border-box;
 
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  border: 2px solid #eaeaea;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  border: 3px solid #eaeaea;
 
   font-size: 16px;
   font-weight: 400;
@@ -72,8 +77,8 @@
 
 .form__input-title {
   &--nonfilled {
-    top: 27px;
-    left: 20px;
+    top: 25px;
+    left: 19px;
 
     font-size: 16px;
     font-weight: 800;
@@ -101,16 +106,48 @@
 .subscribe-wrapper {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 
   font-size: 12px;
   line-height: 24px;
   color: #666666;
 }
 
+.form__subscribe-input {
+  display: none;
+}
+
+.form__subscribe-input + label {
+  position: relative;
+
+  padding-left: 25px;
+}
+
+.form__subscribe-input + label::before {
+  content: "";
+
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 14px;
+  height: 14px;
+  border: 2px solid #666666;
+}
+
+.form__subscribe-input:checked + label::before {
+  background-image: url('../img/subscribe-on.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .form__submit {
   width: 175px;
   height: 50px;
   border: 3px solid #adadad;
+  margin-top: 26px;
 
   font-size: 14px;
   font-weight: 800;
@@ -122,8 +159,8 @@
 
 .error {
   position: absolute;
-  left: 0;
-  bottom: -13px;
+  left: -3px;
+  bottom: -18px;
 
   font-size: 12px;
   color: #db4433;

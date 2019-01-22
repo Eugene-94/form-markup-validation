@@ -4,15 +4,13 @@
   var openPopupBtn = document.querySelector('.sign-up__btn');
   var modal = document.querySelector('.modal');
   var closePopupBtn = modal.querySelector('.modal__close');
-  var inputs = modal.querySelectorAll('input');
+  var inputs = modal.querySelectorAll('.form__input');
   var labels = modal.querySelectorAll('.form__input-title');
   var form = modal.querySelector('.form');
   var emailInput = modal.querySelector('input[type="email"]');
   var error = modal.querySelector('.error');
   var selects = modal.querySelectorAll('select');
   var dateSelect = modal.querySelector('#date');
-
-  console.log(selects[2].required);
 
   var errors = {
     "date": "You forgot to choose the date",
