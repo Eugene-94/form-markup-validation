@@ -31,3 +31,34 @@
   line-height: 18px;
   color: #666666;
 }
+
+@media (max-width: $mobile-width) {
+  .form-section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-section__title {
+    padding-left: 17px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-section__intro {
+    box-sizing: border-box;
+
+    padding-left: 17px;
+    padding-right: 35px;
+    margin-bottom: 21px;
+  }
+
+  .form-section__last-part {
+    display: none;
+  }
+
+  .form-section__data-protection {
+    padding-left: 17px;
+  }
+}

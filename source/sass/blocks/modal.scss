@@ -18,6 +18,7 @@
   background-image: url('../img/modal-bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: contain;
   background-color: #eaeaea;
 
   &.active {
@@ -60,4 +61,32 @@
   font-weight: 800;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+@media (max-width: $mobile-width) {
+  .modal {
+    top: 20px;
+
+    width: 87.5%;
+    padding: 0;
+    padding-top: 33px;
+  }
+
+  .modal__close {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal__title {
+    padding-left: 17px;
+    padding-right: 20%;
+    padding-bottom: 17px;
+
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .modal__promo {
+    display: none;
+  }
 }

@@ -50,6 +50,12 @@ inputs.forEach(function (value, index) {
       inputs[index].parentElement.classList.remove('incorrect');
       inputs[index].parentElement.classList.add('correct');
     }
+
+    if (!inputs[index].value) {
+      inputs[index].nextElementSibling.innerHTML = "";
+      inputs[index].parentElement.classList.remove('incorrect');
+      inputs[index].parentElement.classList.remove('correct');
+    }
   });
 });
 
