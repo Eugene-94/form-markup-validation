@@ -1,14 +1,16 @@
 .modal {
   box-sizing: border-box;
 
-  position: absolute;
+  position: fixed;
   top: 40px;
   @include x-center;
   z-index: 100;
 
   display: none;
   flex-direction: column;
-  width: 728px;
+  width: 740px;
+  height: 90%;
+  overflow: auto;
   padding: 40px;
   padding-top: 35px;
 
